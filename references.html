@@ -1,0 +1,25 @@
+---
+layout: page
+title: 사례
+permalink: /references/
+splash: projects-splash.jpg|지켜보고 있다 대한민국 재정
+---
+
+<div class="container">
+  <h1 class="page-header">References</h1>
+</div>
+
+<div class="container">
+  <ul class="list">
+  {% for reference in site.data.references %}
+    <li class="col-xs-4">
+    <div class="well">
+      <a class="thumbnail" target="_blank" href="{{ reference.link }}"><img src="/img/{{ reference.thumbnail }}" /></a>
+      <h2><a tartget="_blank" href="{{ reference.link }}">{{ reference.title }}</a></h2>
+      {% capture description %} {{ reference.description }} {% endcapture %}
+      <p>{{ description | markdownify }}</p>
+    </div>
+    </li>
+  {% endfor %}
+  </ul>
+</div>

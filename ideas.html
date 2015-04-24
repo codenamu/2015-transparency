@@ -1,0 +1,24 @@
+---
+layout: page
+title: 아이디어
+permalink: /ideas/
+splash: ideas-splash.jpg|지켜보고 있다 대한민국 재정
+---
+
+<div class="container">
+  <h1 class="page-header">Ideas</h1>
+</div>
+
+<div class="container">
+  <ul class="list">
+  {% for idea in site.data.ideas %}
+    <li class="col-xs-4">
+      <div class="well">
+        <h2>{{ idea.title }}</h2>
+        {% capture description %} {{ idea.description }} {% endcapture %}
+        <p>{{ description | markdownify }}</p>
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</div>

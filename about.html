@@ -1,0 +1,147 @@
+---
+layout: page
+title: 소개
+permalink: /about/
+splash: about-splash.png|지켜보고 있다 대한민국 재정
+---
+
+<div class="about-desc">
+  <div class="container">
+    <p>내가 낸 세금 꼭 필요한 곳에 잘 사용되고 있을까요?</p>
+
+    <p>우리가 내는 세금을 국민들이 꼼꼼히 살펴보고 잘 사용하고 있는<br />직접 확인하는게 제일 정확하겠죠?</p>
+
+    <p>공개된 정부의 재정 정보를 꼼꼼히 살펴보고<br />
+    어려운 재정 정보의 이해를 돕거나 재정 데이터를 보다 쉽게 활용할 수 있도록<br />
+    row data  아카이빙,  데이터 분석, 시각화 등을 합니다.<br/>
+    지켜보고 있다 대한민국 재정 프로젝트는 많은 분들이 함께 참여하고 있습니다.
+    </p>
+  </div>
+</div>
+
+<div class="container fiscal-org section">
+
+  <div class="row">
+    <div class="col-xs-4">
+      <h2>파트너</h2>
+    </div>
+    <div class="col-xs-8">
+      <p>&nbsp;</p>
+      <div class="media clearfix">
+        <div class="media-left media-middle">
+          <a href="http://codenamu.org" target="_blank">
+            <img src="/img/p-codenamu.png" alt="codenamu.org" class="media-object" />
+          </a>
+        </div>
+        <div class="media-body media-middle">
+          <h3 class="media-heading">코드나무</h3>
+          <p>코드나무는 열린정부 실현을 위해 자발적으로 모인 시민들의 오픈 커뮤니티입니다.</p>
+          <p>코드나무는 공공 데이터는 시민들에게 개방되어야 하고,
+          시민과 정부가 협업을 통해서 공공의 가치를 만들어 내야 한다는 믿음으로,
+          시민 스스로 문제를 해결하려고 노력하며 코드로 보다 나은 세상을 만들고자 합니다.</p>
+        </div>
+      </div>
+
+      <div class="media clearfix">
+        <div class="media-left media-middle">
+          <a href="http://www.gov30.go.kr" target="_blank">
+            <img src="/img/p-gov3.png" alt="gov 3.0" class="media-object" />
+          </a>
+        </div>
+        <div class="media-body media-middle">
+          <h3 class="media-heading">정부3.0</h3>
+          <p>정부 3.0 정책 실행 부서인 안전행정부, 한국정보화진흥원 분들과 함께 공공데이이터 개방의 활용도를 높이기 위해서 협력하고 있습니다.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="container fiscal-teams section">
+  <div class="row">
+    <div class="col-xs-4">
+      <h2>프로젝트 참여자</h2>
+    </div>
+    <div class="col-xs-8">
+      <h3 class="page-header">투명성 TF</h3>
+      <ul class="team-tf people clearfix menu">
+      {% for person_list in site.data.people.tft %}
+        {% for person_hash in person_list %}
+        <li class="col-xs-4"><h4>{{ person_hash[0] }} <small>{{ person_hash[1] }}</small></h4></li>
+        {% endfor %}
+      {% endfor %}
+      </ul>
+
+      <h3 class="page-header">아이디어톤, 해커톤 참여자</h3>
+      <ul class="team-hackathon people clearfix menu">
+      {% for people in site.data.people.hackathon %}
+        {% for person in people %}
+        <li class="col-xs-4"><h4>{{ person }}</h4></li>
+        {% endfor %}
+      {% endfor %}
+      </ul>
+
+      <h3 class="page-header">코드 기여자</h3>
+      <ul class="team-github people clearfix menu">
+      {% for person_hash in site.data.people.github %}
+        {% for person in people %}
+        <h4>{{ person }}</h4>
+        {% endfor %}
+      {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="container contact">
+  <div class="row">
+    <div class="col-xs-4">
+      <h2>프로젝트에<br />관심이 있다면</h2>
+    </div>
+    <div class="col-xs-4">
+      <h3>씨씨코리아 사무국</h3>
+      <ul class="menu">
+        <li>
+          <i class="fa fa-phone-square fa-2x" style="margin-left: 2px;"></i>
+          <p style="position: absolute; margin-left: 6px; margin-top: 4px;">070-7618-0321</p>
+        </li>
+        <li>
+          <span class="fa-stack">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+          </span>
+          <p><a href="http://me2.do/5GQLU504" target="_blank">서울특별시 마포구 와우산로19길 21 5층</a></p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-xs-4">
+      <h3>웹</h3>
+      <ul class="menu">
+        <li>
+          <span class="fa-stack">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+          </span>
+          <p><a href="https://www.facebook.com/codenamu" target="_blank">codnamu</a></p>
+        </li>
+        <li>
+          <span class="fa-stack">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+          <p><a href="https://twitter.com/codenamu" target="_blank">@codnamu</a></p>
+        </li>
+        <li>
+          <span class="fa-stack">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-slack fa-stack-1x fa-inverse"></i>
+          </span>
+          <p><a href="http://code-namu.slack.com" target="_blank">code-namu</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

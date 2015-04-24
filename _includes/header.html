@@ -1,0 +1,31 @@
+<header class="navbar navbar-static-top" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
+        <img alt="Brand {{ site.title }}" src="/{{ 'img' | prepend: baseurl }}/logo.png" />
+      </a>
+    </div>
+    <nav class="bs-navbar">
+      <ul class="nav navbar-nav navbar-right nav-pills">
+      {% for link in site.data.navigation %}
+        {% if link.url contains 'http' %}
+          {% assign domain = '' %}
+        {% else %}
+          {% assign domain = site.url %}
+        {% endif %}
+        <li{% if page.url == link.url %} class="active"{% endif %}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+      {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+{% if page.splash %}
+{% assign splash_hash = page.splash | split:'|' %}
+
+<div id="splash" style="background: url({{ site.url }}/img/{{ page.splash | split:"|" | first }}) no-repeat center top;">
+  <div class="container text-center sr-only">
+    {{ page.splash | split:"|" | last | markdownify }}
+  </div>
+</div>
+{% endif %}

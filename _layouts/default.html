@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  {% assign slug = page.url | remove:'.html' | remove:'.md' | slugify  %}
+  {% if slug contains 'project-' %}
+    {% assign slug = 'project' %}
+  {% endif %}
+
+  <body{% if slug %} class="{{ slug }}"{% endif %}>
+
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
