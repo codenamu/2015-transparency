@@ -173,27 +173,33 @@ ul.list {
   border-color: #31708f;
 }
 
-.projects .well {
-  min-height: 320px;
-  background: transparent;
+.projects {
+  .page-content {
+    padding-top: 30px;
+  }
+  .well {
+    min-height: 320px;
+    background: transparent;
+  }
 }
 
 .references .well {
   min-height: 540px;
 }
 
-.ideas .well {
-  min-height: 240px;
+.ideas {
+  .page-content {
+    padding-top: 30px;
+  }
+  .well {
+    min-height: 240px;
+    background-color: rgba(255,255,165, 1);
+  }
 }
-
 .data .page-header {
   border-left: 6px solid pink;
   font-size: medium;
   padding-left: 0.5em;
-}
-
-.ideas .well {
-  background-color: rgba(255,255,165, 1);
 }
 
 .site-footer {
@@ -273,3 +279,6 @@ ul.list {
   }
 }
 
+.project .img-thumbnail {
+  margin-bottom: 30px;
+}
