@@ -8,13 +8,36 @@ splash: front-splash.jpg|지켜보고 있다 대한민국 재정
   <div class="container">
     <div class="row">
       <div class="col-xs-6">
-        <img src="/img/project1.jpg" />
+        <div class="well">
+          <h4>프로젝트 하나!</h4>
+          <h2><a href="http://wheredoesmymoneygo.kr" target="_blank">Where Does My Money Go?</a></h2>
+          <p>오픈스펜딩을 활용한 영국의 ‘내가 낸 세금은 어디에 쓰일까?‘(Where Does My Money Go?) 프로젝트는 각 기능별로 세금이 어디 쓰였는지 기록한 데이터를 기반으로 2가지 방법으로 자료를 시각적으로 표현합니다.</p>
+        </div>
       </div>
       <div class="col-xs-6">
-        <img src="/img/project2.jpg" />
+        <div class="well">
+          <h4>프로젝트 두울!</h4>
+          <h2><a href="/project/9-getoutofdept-kr/">우리 지역 채무 탈출</a></h2>
+          <p>우리 지역의 채무를 줄이기 위해 얼마나 노력을 할까? 내가 사는 지역은 어떤 항목에 예산을 쓰고, 채무를 줄이기 위해 얼마나 노력을 할까요? 행정자치부가 운영하는 재정고 웹사이트를 통해 모은 지방 예산 데이터를 가지고 지도와 그래프로 시각화해 봤습니다.</p>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="well">
+          <h4>프로젝트 세엣!</h4>
+          <h2><a href="/project/7-local-index/">재정자립도 시각화</a></h2>
+          <p>지속적으로 악화되어 가는 지방정부의 재정자립도를 시각화하여 지방자치의 독립성과 지역주민의 복지 및 편익이 저하되고 있음을 보여주고자 했습니다. 현재 서울 데이터 및 서울 지도를 중심으로 되어있으나 추후 전국으로 확대하고자 프로젝트를 계속 진행하고 있습니다.</p>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="well">
+          <h4>프로젝트 네엣!</h4>
+          <h2><a href="/project/10-2015-korea-budget/">2015 세출 예산 시각화</a></h2>
+          <p>백악관이 올해 초 2016 회계년도 예산 데이터를 공개한 사실을 아시나요? 용도별로 사람들이 많이 사용하는 웹사이트에 데이터, 설명, 시각화 프로젝트를 공개했다고 합니다. 기획재정부가 운영하고 있는 디지털예산회계시스템에 공개된 2015년도 세출 예산 데이터를 시각화해 봤습니다.</p>
+        </div>
       </div>
     </div>
   </div>
+
 </div>
 
 <div id="home-about" style="background: url({{ site.url }}/img/front-about.jpg) no-repeat center center;">
@@ -29,18 +52,12 @@ splash: front-splash.jpg|지켜보고 있다 대한민국 재정
       <h4>프로젝트에 함께 하는 사람들</h4>
       <p>'지켜보고 있다 대한민국 재정' 프로젝트 멤버입니다.</p>
       <p>&nbsp;</p>
-      <ul class="menu">
-      {% for person_hash in site.data.people.tft %}
-        {% assign order = forloop.index %}
-        {% for person in person_hash %}
-        <li class="col-xs-2">
-          <img class="img-circle img-responsive" src="/img/profile.gif" alt="{{ person[0] }}" />
-          <h3>{{ person[0] }}</h3>
-          <p>{{ person[1] }}</p>
-          <!-- tft{{ order }}.jpg -->
-        </li>
+      <blockquote>
+        {% for person in site.data.people.hackathon %}
+          {{ person }},
         {% endfor %}
-      {% endfor %}
+        최장현, 박화진, 김강민
+      </blockquote>
       </ul>
     </div>
   </div>

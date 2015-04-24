@@ -5,7 +5,13 @@
         <img alt="Brand {{ site.title }}" src="/{{ 'img' | prepend: baseurl }}/logo.png" />
       </a>
     </div>
+
     <nav class="bs-navbar">
+      <ul class="list sns pull-right">
+        <li><a target="_blank" href="https://www.facebook.com/codenamu"><img src="/img/facebook.png" alt="codenamu facebook group"></a></li>
+        <li><a target="_blank" href="https://twitter.com/codenamu"><img src="/img/twitter.png" alt="codenamu twitter"></a></li>
+      </ul>
+
       <ul class="nav navbar-nav navbar-right nav-pills">
       {% for link in site.data.navigation %}
         {% if link.url contains 'http' %}
@@ -17,6 +23,7 @@
       {% endfor %}
       </ul>
     </nav>
+
   </div>
 </header>
 
