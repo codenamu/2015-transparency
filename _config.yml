@@ -4,7 +4,7 @@ email: contact@codenamu.org
 description: > # this means to ignore newlines until "baseurl:"
   투명 재정 프로젝트는 정부가 공개한 재정 데이터를 시민들이 직접 활용해서 의미 있는 결과물을 만들어보자는 취지에서 추진한 정부와 시민들의 협업 프로젝트입니다.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://transparency.codenamu.org" # the base hostname & protocol for your site
+url: "http://t.codenamu.org" # the base hostname & protocol for your site
 twitter_username: codenamu
 github_username:  codenamu
 
