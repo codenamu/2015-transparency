@@ -27,11 +27,17 @@
 }
 
 .fiscal-org {
-
+  padding-top: 30px;
+  h3 {
+    color: #39f;
+    margin-bottom: 20px;
+  }
 }
 
 .fiscal-teams {
-
+  .page-header {
+    color: #39f;
+  }
 }
 
 .contact {
