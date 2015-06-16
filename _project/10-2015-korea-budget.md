@@ -32,7 +32,7 @@ team_photo:
 
 ## 데이터
 
-[디지털예산회계시스템](digitalbrain.or.kr) > 재정 통계 > 예산 현황 > 세출/지출 > [소관-회계-사업별 세출예산](https://www.digitalbrain.go.kr/kor/view/statis/statis01_01_03.jsp?code=DB01010103)
+[디지털예산회계시스템](https://www.digitalbrain.go.kr) > 재정 통계 > 예산 현황 > 세출/지출 > [소관-회계-사업별 세출예산](https://www.openfiscaldata.go.kr/tdata/V2Z23N9F5U8V1FWU8C9S4164409)
 
 예시)   
 소관,회계,사업,본예산(백만원)   
@@ -40,9 +40,9 @@ team_photo:
 감사원,일반회계,감사활동경비,00000   
 감사원,일반회계,국제교류협력강화,00   
 
-데이터 관련해서 한 가지 아쉬운 점은 [소관-회계-사업별 세출예산](https://www.digitalbrain.go.kr/kor/view/statis/statis01_02_05.jsp?code=DB01010205) 페이지에 방문해보면 알 수 있는데 각 부처별로 조회를 해야만 해서 하나씩 수합해서 csv로 가공하는 작업을 해야했습니다. 개발자 등 데이터를 다루는 사람들을 위해 이런 정보는 하나로 정리해서 서비스를 하면 좋겠습니다.
+데이터 관련해서 한 가지 아쉬운 점은 [소관-회계-사업별 세출예산](https://www.openfiscaldata.go.kr/tdata/V2Z23N9F5U8V1FWU8C9S4164409) 페이지에 방문해보면 알 수 있는데 각 부처별로 조회를 해야만 해서 하나씩 수합해서 csv로 가공하는 작업을 해야했습니다. 개발자 등 데이터를 다루는 사람들을 위해 이런 정보는 하나로 정리해서 서비스를 하면 좋겠습니다.
 
-또한 이 데이터를 조회해보시면 알 수 있지만 각 부처들의 사업별 예산을 큰 단위로 1단계만 조회할 수 있습니다. 더 조사를 해보니 부처별로 예산 각목 명세서를 공개하는데 제대로 공개한 부처는 몇 개 밖에 없고 대부분 공개되어 있지 않습니다. [“국회·감사원 등 예·결산 내역 공개 꺼려 정부3.0 취지 퇴색” 내용 부실 정보공개 F등급, 지자체는 홈피에 상세히 올려](http://imggo.seoul.co.kr/news/newsView.php?id=20131007012013&section=news_policy&section2=&page=46) 이런 기사에 따르면 고용노동부, 교육부는 예산 각목명세서, 사업설명서, 개요서를 모두 자체 홈페이지에 공개해 최고 높은 평가를 받았고 나머지는 공개는 했어도 자료가 부실하거나 공개하지 않은 것으로 파악하고 있습니다.
+또한 이 데이터를 조회해보시면 알 수 있지만 각 부처들의 사업별 예산을 큰 단위로 1단계만 조회할 수 있습니다. 더 조사를 해보니 부처별로 예산 각목 명세서를 공개하는데 제대로 공개한 부처는 몇 개 밖에 없고 대부분 공개되어 있지 않습니다.
 
 마지막으로 예산과 관련해서 [국회예산정책처](http://www.nabo.go.kr)에서 매년 [2015년도 예산안 분석 종합](http://www.nabo.go.kr/Sub/01Report/01_01_Board.jsp?funcSUB=view&bid=19&arg_cid1=0&arg_cid2=0&arg_class_id=0&currentPage=0&pageSize=10&currentPageSUB=0&pageSizeSUB=10&key_typeSUB=subject&keySUB=2015&search_start_dateSUB=&search_end_dateSUB=&department=0&department_sub=0&etc_cate1=&etc_cate2=&sortBy=reg_date&ascOrDesc=desc&search_key1=&etc_1=0&etc_2=0&tag_key=&arg_id=5305&item_id=5305&etc_1=0&etc_2=0&name2=0)과 같은 보고서를 발간하고 있습니다. [예산정책처 "유사·중복 사업 예산 1천687억원 달해"](http://www.yonhapnews.co.kr/politics/2014/11/04/0505000000AKR20141104075000001.HTML) 이런 기사에서도 볼 수 있듯이, 이 보고서 안에는 정부가 제출한 예산안을 분석해서 유사, 중복사업에 대한 의견(46p)과 함께 연례적 집행실적 부진사업 분석에 대한 내용도 확인할 수 있습니다.
 
