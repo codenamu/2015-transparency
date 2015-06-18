@@ -14,7 +14,7 @@ splash: projects-splash.jpg|지켜보고 있다 대한민국 재정
 
 <div class="container">
 
-{% for type in types %}
+{% for type in types reversed %}
   <div class="type clearfix">
     {% assign type_title = '프로젝트' %}
     {% if type.name == 'event' %}
