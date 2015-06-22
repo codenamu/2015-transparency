@@ -34,5 +34,25 @@
   <div class="container text-center sr-only">
     {{ page.splash | split:"|" | last | markdownify }}
   </div>
+  {% if page.permalink == '/about/' %}
+    <div class="about-desc">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-4">
+            <p>내가 낸 세금 꼭 필요한 곳에 잘 사용되고 있을까요?</p>
+            <p>
+              "월급 받을 때 세금 내는데 어떻게 쓰이고 있을까?<br>
+              내가 얼마를 낸 거고 정부는 나에게 뭘 해준걸까 혹은 나는 뭔가 잘 누리고 있는건가?<br>
+              연말정산은 뭔데 내가 세금을 더 내야 하지? "
+            </p>
+            <p>모두들 한번쯤 생각해보신 적 있지 않나요?</p>
+            <p>‘지켜보고 있다 대한민국 재정’ 프로젝트는 공개된 정부의 재정 정보를 꼼꼼히 살펴보고,
+              어려운 재정정보의 이해를 돕고 재정 데이터를 보다 쉽게 활용할 수 있도록
+              row data 아카이빙, 데이터 분석, 시각화 등을 합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
 </div>
 {% endif %}
