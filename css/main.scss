@@ -102,6 +102,17 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: relative;
+}
+
+#about-btn {
+  position: absolute;
+  bottom: 30px;
+  color: #fff;
+}
+
+#about-btn:hover {
+  color: #666;
 }
 
 .about-desc {
