@@ -6,7 +6,7 @@ description:
 
 flickr_img: /img/2015-korea-budget.png
 
-result: http://beta.codenamu.org/2015-korea-budget
+result: http://codenamu.org/2015-korea-budget
 documents: https://github.com/codenamu/2015-korea-budget/blob/gh-pages/README.md
 github: https://github.com/codenamu/2015-korea-budget
 slack: https://code-namu.slack.com/messages/transparency/
