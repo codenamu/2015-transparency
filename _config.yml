@@ -9,11 +9,13 @@ twitter_username: codenamu
 github_username:  codenamu
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  entity_output: :as_input
+  hard_wrap: true
 
-# Project settings
+# collections
 collections:
   project:
     output: true
@@ -22,9 +24,8 @@ collections:
 defaults:
   -
     scope:
-      path: "project"
-      type: "project" # a collection in your site, in plural form
+      path: _project
     values:
-      layout: "project"
-      splash: "projects-splash.jpg|지켜보고 있다 대한민국 재정"
-      type: "project"
+      layout: project
+      splash: projects-splash.jpg|지켜보고 있다 대한민국 재정
+      type: project

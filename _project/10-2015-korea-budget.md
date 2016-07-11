@@ -13,7 +13,7 @@ slack: https://code-namu.slack.com/messages/transparency/
 
 team: 김강민, 홍영택
 team_photo: 
-
+type: project
 ---
 
 우리나라 기획재정부가 운영하고 있는 [디지털예산회계시스템](https://www.digitalbrain.go.kr)에 공개된 2015년도 세출 예산 데이터를 활용해서 [트리맵](http://en.wikipedia.org/wiki/Treemapping) 형식으로 시각화해 봤습니다. 올해 예산안은 작년 12월 2일 화요일 국회 본회의 의결을 거쳐 확정되었는데 1995년 이후 19년만에 헌법이 정한 법정기일내 예산안을 처리한 것이라고 합니다. 올해 예산안 관련해서 [국회에서 확정된 2015년 예산 주요내용](http://www.mosf.go.kr/news/news02.jsp?actionType=view&hdnTopicDate=2014-12-02&runno=4092582) 보도자료나 [재정혁신타운](http://www.budget.go.kr) 웹사이트에서 더 상세한 정보를 확인 수 있습니다.

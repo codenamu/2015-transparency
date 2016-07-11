@@ -30,9 +30,12 @@
 {% if page.splash %}
 {% assign splash_hash = page.splash | split:'|' %}
 
-<div id="splash" style="background: url({{ site.url }}/img/{{ page.splash | split:"|" | first }}) no-repeat center top;">
-  <div class="container text-center sr-only">
-    {{ page.splash | split:"|" | last | markdownify }}
+<div id="splash" style="background: url(/img/{{ page.splash | split:"|" | first }}) no-repeat center top;">
+  <div class="container text-center">
+    <div class="sr-only">
+      {{ page.splash | split:"|" | last | markdownify }}
+    </div>
+    <p>&nbsp;</p>
   </div>
   {% if page.permalink == '/about/' %}
     <div class="about-desc">
